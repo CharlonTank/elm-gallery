@@ -41,7 +41,7 @@ type alias Url =
 slide : List (Html.Attribute msg) -> Url -> Size -> Html msg
 slide attrs url size =
     img
-        ([ src ("url(" ++ url ++ ")")
+        ([ src url
          , style "object-fit" (toObjectFit size)
          , class "elm-gallery-image"
          ]
